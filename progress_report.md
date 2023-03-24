@@ -11,7 +11,7 @@
  
  The majority of my progress thus far has been importing a new corpus, the [Vercelloti corpus](https://slabank.talkbank.org/access/English/Vercellotti.html) that is part of [SLABank](https://slabank.talkbank.org/). 
  
- When the data was first imported, crucial learner metadata was missing, which was a major roadblock. However, the Vercelloti corpus is actually part of the larger [PELIC](https://github.com/ELI-Data-Mining-Group/PELIC-dataset), and I was able to use data from PELIC in order to map the relevant participant information needed for my analysis. 
+ When the data was first imported, crucial learner metadata was missing, which was a major roadblock. However, the Vercelloti corpus is actually sourced from the larger [PELIC](https://github.com/ELI-Data-Mining-Group/PELIC-dataset), and I was able to use data from PELIC in order to map the relevant participant information needed for my analysis. 
 
 Not much work was needed with the native speaker dataset, but I added additional columns to the dataframe that split the annotated tokens into the words themselves, the part-of-speech annotation, and the morpheme annotation for easier analysis down the line. 
 
@@ -25,7 +25,7 @@ While I did not have time to begin my analysis of the texts and morphemes themse
 
 ### Sharing Plan
 
-The [license](https://creativecommons.org/licenses/by-nc-sa/4.0/) I have chosen for this project is the same license that is the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. This is the license that is utilized by [TalkBank](https://www.talkbank.org/) (version 4.0 rather than 3.0), from where the CHILDES and SLABank data are sourced. 
+The [license](/LICENSE.md) I have chosen for this project is the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. This is the same license that is utilized by [TalkBank](https://www.talkbank.org/) (version 4.0 rather than 3.0), from where the CHILDES and SLABank data are sourced. 
 
 ## 1st Progress Report
  > Feb. 24, 2023
