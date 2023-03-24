@@ -1,10 +1,38 @@
 # Progress report
 
-## 1st Progress Report
+## 2nd Progress Report
+ > Mar. 24, 2023
 
 ### Accomplishments
 
-The data import process so far is detailed in [this notebook](/notebooks/data_curation.ipynb).
+> Continued data curation efforts are detailed in [this notebook](/notebooks/data_curation_cont.ipynb).
+
+ As suspected, COREFL didn't have sufficient data for the purposes of my analysis. 
+ 
+ The majority of my progress thus far has been importing a new corpus, the [Vercelloti corpus](https://slabank.talkbank.org/access/English/Vercellotti.html) that is part of [SLABank](https://slabank.talkbank.org/). 
+ 
+ When the data was first imported, crucial learner metadata was missing, which was a major roadblock. However, the Vercelloti corpus is actually part of the larger [PELIC](https://github.com/ELI-Data-Mining-Group/PELIC-dataset), and I was able to use data from PELIC in order to map the relevant participant information needed for my analysis. 
+
+Not much work was needed with the native speaker dataset, but I added additional columns to the dataframe that split the annotated tokens into the words themselves, the part-of-speech annotation, and the morpheme annotation for easier analysis down the line. 
+
+ Finally, I created some visualizations to better understand what is contained in the new learner dataframe. I stored these visualizations, the polished dataframes, as well as a csv file mapping the ids in the Verccelloti corpus back to PELIC in [data_samples](/data_samples).
+
+While I did not have time to begin my analysis of the texts and morphemes themselves, all the data is finalized and ready to be worked with. 
+
+### Next Steps
+
+- Foray into morphemes
+
+### Sharing Plan
+
+The [license](https://creativecommons.org/licenses/by-nc-sa/4.0/) I have chosen for this project is the same license that is the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. This is the license that is utilized by [TalkBank](https://www.talkbank.org/) (version 4.0 rather than 3.0), from where the CHILDES and SLABank data are sourced. 
+
+## 1st Progress Report
+ > Feb. 24, 2023
+
+### Accomplishments
+
+> The data import process so far is detailed in [this notebook](/notebooks/data_curation.ipynb).
 
  - **L2 Data**: I decided to utilize the [COREFL Corpus](http://corefl.learnercorpora.com/) rather than the PELIC, since it has spoken data transcripts available and I am more interested in analyzing speech for this project. The data was imported successfully and tidied into a dataframe with all the relevant information. However, the mean years of studying English is 12.75, which might be quite high for an analysis of early morpheme acquisition that is comparable to a child learning their L1. I may narrow the scope to participants who have been learning English for a smaller amount of time, or supplement with some additional learner data from additional spoken corpora with a wider range of proficiencies and L1s, though it has proven challenging to find any.
 
