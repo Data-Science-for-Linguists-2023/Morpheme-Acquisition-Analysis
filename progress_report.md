@@ -1,5 +1,23 @@
 # Progress report
 
+## 3rd Progress Report
+ > Apr. 10, 2023
+
+### Accomplishments
+
+> Started data analysis in [this notebook](/notebooks/data_analysis.ipynb).
+
+I did some additional research on morpheme acquisition order studies and located some sources that I used to select the morphemes I would analyze. To start, I'll be looking at present progressive (*-ing*), prepositions *in, on*, plural (*-s*), past irregular, possessive (*-'s*), copula (*is, am, are*), articles (*a, the*), past regular (*-ed*), third person singular (*-s*), third person irregular, and auxiliary verbs. 
+
+Using regular expression patterns based on [TalkBank's annotation scheme](https://talkbank.org/manuals/MOR.html#_Toc65933281), I defined a function for each of the selected morphemes that compiled and counted each occurance of that particular morpheme per text across the L1 and L2 data frames. 
+
+Then, I organized the data by age/years of learning English and counts of each morpheme. From a preliminary glance it is hard to discern if there are any observable patterns, especially in the L2 data frame. Currently, I am figuring out how to best visualize/present this data meaningfully for further analysis. 
+
+### Next Steps
+
+- Create visualizations and describe patterns
+- Find paths for further exploration and analysis
+
 ## 2nd Progress Report
  > Mar. 24, 2023
 
