@@ -1,6 +1,6 @@
 # Morpheme-Acquisition-Analysis
 This is Sen's term project. 
-
+> [Project guestbook](https://github.com/Data-Science-for-Linguists-2023/Class-Lounge/blob/main/guestbooks/sen.md)
 ## Summary
 
 Coming soon
