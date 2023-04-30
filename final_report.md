@@ -26,13 +26,25 @@ by Sen Sub Laban
  Curious to see if proposed 'natural orders' of morpheme acquisition could be analyzed through corpora, I formulated this project. My questions are as follows: (1) Does the sequence of morpheme acquisition in the data align with previously proposed acquisition orders? and (2) How does acquisition potentially differ between first langauge (L1) and second langauge (L2) corpora? 
 
 ## Data
-The data utilized in this project was mostly sourced from [TalkBank](https://talkbank.org/). TalkBank is a multilingual database focused on research in the study of human communication. It provides repositories in 14 research areas, including child langauge acquisition ([CHILDES](https://childes.talkbank.org/)) and second language acquisition ([SLABank](https://slabank.talkbank.org/)). I used corpora from these two collections in order to conduct my analysis. 
+The data utilized in this project was mostly sourced from [TalkBank](https://talkbank.org/). TalkBank is a multilingual database focused on research in the study of human communication. It provides repositories in 14 research areas, including child langauge acquisition ([CHILDES](https://childes.talkbank.org/)) and second language acquisition ([SLABank](https://slabank.talkbank.org/)). I used corpora from these two collections in order to conduct my analysis. The L1 data I selected was Berman & Slobin's (1994) [Frog Story corpus](https://childes.talkbank.org/access/Frogs/English-Slobin.html), which consists of recorded narratives of 12 different native English speakers telling a wordless "frog story" from a picture book. Each speaker was recorded at several different age levels (3, 4, 5, 9, and 20), making it suitable for looking into morpheme usage over time. The L2 corpus is the Vercelloti corpus from SLABank, which consists of reocrdings from learners witha variety of L1's and varying levels of English proficiency. 
 
-The recording transcripts in TalkBank databases is tored in a dedicated format known as CHAT. I used a Python library, [PyLangAcq](https://pylangacq.org/), to import and parse the CHAT data files. 
+The transcripts in TalkBank databases are stored in a dedicated format known as CHAT. A Python library, [PyLangAcq](https://pylangacq.org/), was used to import and parse the CHAT data files. The structure of the CHAT data and process of importing said data can be seen [here](https://nbviewer.org/github/Data-Science-for-Linguists-2023/Morpheme-Acquisition-Analysis/blob/main/notebooks/data_curation.ipynb#importing-native-corpus). Utilizing PyLangAcq to extract the data that I needed from the CHAT files, I created two separate dataframes, one for native English speakers and another for English langauge learners, which are stored in [this folder](../data_samples). The CHAT files provided tokens as well as annotations for morphemes and part-of-speech (POS), which I extracted and added to respective columns. 
+
+A major roadblock in the process of acquiring my data was that the Vercelloti corpus CHAT files did not contain crucial learner metadata, such as the years spent learning English, that was necessary for my analysis. I was able to resolve this because Vercelloti's corpus is actually sourced from [PELIC](https://eli-data-mining-group.github.io/Pitt-ELI-Corpus/). I was able to successfully [create a csv file](https://nbviewer.org/github/Data-Science-for-Linguists-2023/Morpheme-Acquisition-Analysis/blob/main/notebooks/data_curation_cont.ipynb#augmenting-the-l2-metadata) that maps the Vercelloti corpus participant ids to the PELIC anonymized ids and used it to import the necessary information about the subjects into my larger dataframe. 
 
 ## Analysis
+Once all the data was in order, I began my analysis. Researchers typically measure morpheme acquisition order by suppliance in obligatory context (SOC). To quote Brown (1973): 
+>*Grammatical morphemes are obligatory in certain contexts, and so one can set an acquisition criterion not simply in terms of output, but in terms of output-where-required. Each obligatory context can be regarded as a kind of test item which the child passes by supplying the required morpheme or fails by supplying none or one that is not correct. This performance measure, the percentage of morphemes supplied in obligatory contexts, should not be dependent on the topic of conversation or the character of the interaction.*
+
+The complexity of creating a model to actually measure SOC using Python would be beyond the scope of this project (at least with my current coding abilities), so I went about analysis in another way: by comparing the normalized frequencies of selected morphemes at each age or stage of acquisiton across the corpora. Functions to compile and count the occurence of 11 functors, selected from those investigated by Brown (1973) were run across both dataframes. The morpheme counts were normalized by dividing the counts by text length. Then, I calculated the means of the counts for each functor and level and stored that data in two new dataframes, which can be found in [data_samples](../data_samples). At first glance, it was challenging to parse the dataframes and extract meaningful patterns, so I generated the visualizations below. 
+
+![Learner corpus](../data_samples/visuals/Lcorp_linegraph.png)
+![Native corpus](../data_samples/visuals/Ncorp_linegraph.png)
+
 
 ## Conclusion
+
+Potential avenues for further analysis include COCA, which I didn't get around to. 
 
 ## Process reflection
 
