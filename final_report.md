@@ -36,10 +36,13 @@ A major roadblock in the process of acquiring my data was that the Vercelloti co
 Once all the data was in order, I began my analysis. Researchers typically measure morpheme acquisition order by suppliance in obligatory context (SOC). To quote Brown (1973): 
 >*Grammatical morphemes are obligatory in certain contexts, and so one can set an acquisition criterion not simply in terms of output, but in terms of output-where-required. Each obligatory context can be regarded as a kind of test item which the child passes by supplying the required morpheme or fails by supplying none or one that is not correct. This performance measure, the percentage of morphemes supplied in obligatory contexts, should not be dependent on the topic of conversation or the character of the interaction.*
 
-The complexity of creating a model to actually measure SOC using Python would be beyond the scope of this project (at least with my current coding abilities), so I went about analysis in another way: by comparing the normalized frequencies of selected morphemes at each age or stage of acquisiton across the corpora. Functions to compile and count the occurence of 11 functors, selected from those investigated by Brown (1973) were run across both dataframes. The morpheme counts were normalized by dividing the counts by text length. Then, I calculated the means of the counts for each functor and level and stored that data in two new dataframes, which can be found in [data_samples](../data_samples). At first glance, it was challenging to parse the dataframes and extract meaningful patterns, so I generated the visualizations below. 
+The complexity of creating a model to actually measure SOC using Python would be beyond the scope of this project (at least with my current coding abilities), so I went about analysis in another way: by comparing the normalized frequencies of selected morphemes at each age or stage of acquisiton across the corpora. Functions to compile and count the occurence of 11 functors, selected from those investigated by Brown (1973) were run across both dataframes. The morpheme counts were normalized by dividing the counts by text length. Then, I calculated the means of the counts for each morpheme and level and stored that data in two new dataframes, which can be found in [data_samples](../data_samples). At first glance, it was challenging to parse the dataframes and extract meaningful patterns, so I generated the visualizations below. 
 
 ![Learner corpus](../data_samples/visuals/Lcorp_linegraph.png)
+
 ![Native corpus](../data_samples/visuals/Ncorp_linegraph.png)
+
+
 
 
 ## Conclusion
