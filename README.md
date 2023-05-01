@@ -7,7 +7,7 @@ Completed Feb. 10, 2023 through Apr. 30, 2023.
 
 ## Summary
 
-This project investigates morpheme acquisition order of native English speakers and English language learners. Based on 'natural order studies,' which are influential in the fields of linguistics and second langauge acquisition, the project takes a data-science approach to analysing the developmental patterns of grammatical morphemes in language acquisition. 
+This project investigates the morpheme acquisition order of native English speakers and English language learners. Based on 'natural order studies,' which are influential in the fields of linguistics and second langauge acquisition, the project takes a data-science approach to analyzing the developmental patterns of grammatical morphemes in language acquisition. 
 
 ## Data
 
