@@ -24,14 +24,14 @@ The data sources utilized in this project are sourced from [TalkBank](https://ta
 
     - Data curation: [github](notebooks/data_curation.ipynb) | [nbviewer](https://nbviewer.org/github/Data-Science-for-Linguists-2023/Morpheme-Acquisition-Analysis/blob/main/notebooks/data_curation.ipynb)
     - Data curation continued: [github](notebooks/data_curation_cont.ipynb) | [nbviewer](https://nbviewer.org/github/Data-Science-for-Linguists-2023/Morpheme-Acquisition-Analysis/blob/main/notebooks/data_curation_cont.ipynb)
-    - Data analysis: [github](data_analysis.ipynb) | [nbviewer](https://nbviewer.org/github/Data-Science-for-Linguists-2023/Morpheme-Acquisition-Analysis/blob/main/notebooks/data_analysis.ipynb)
+    - Data analysis: [github](notebooks/data_analysis.ipynb) | [nbviewer](https://nbviewer.org/github/Data-Science-for-Linguists-2023/Morpheme-Acquisition-Analysis/blob/main/notebooks/data_analysis.ipynb)
 
 
 - [data_samples](data_samples/) contains stored csv files of the data frames utilized throughout the project.
 
     - [visuals](data_samples/visuals/) is the folder containing all visualizations generated throughout this project.
   
-- [Presentation.pdf](Final_Presentation.pdf) is a copy of the presentation aid utilized for a presentation about this project on Apr. 14, 2023. 
+- [Final_Presentation.pdf](Final_Presentation.pdf) is a copy of the presentation aid utilized for a presentation about this project on Apr. 14, 2023. 
 
 - [Progress report](progress_report.md) details progress made on this project throughout the semester.
 
