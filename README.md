@@ -1,5 +1,7 @@
 # Morpheme-Acquisition-Analysis
-A term project by Sen Sub Laban (sen.s@pitt.edu) Completed Feb. 10, 2023 through Apr. 30, 2023.
+A term project by Sen Sub Laban (sen.s@pitt.edu).
+
+Completed Feb. 10, 2023 through Apr. 30, 2023.
 
 > [Project guestbook](https://github.com/Data-Science-for-Linguists-2023/Class-Lounge/blob/main/guestbooks/sen.md)
 
