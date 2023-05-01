@@ -98,3 +98,5 @@ MacWhinney, B. (2000). The CHILDES Project: Tools for Analyzing Talk. 3rd Editio
 R. A. Berman & D. I. Slobin (1994). Relating events in narrative: A crosslinguistic developmental study. Hillsdale, NJ: Lawrence Erlbaum Associates.
 
 Vercellotti, M. L. (2017). The development of complexity, accuracy, and fluency in second language performance: A longitudinal study. Applied Linguistics, 38(1), 90-111.
+
+Webber, W., Moffat, A. & Zobel, J. (2010). A similarity measure for indefinite rankings. ACM Trans. Inf. Syst. 28, 4, Article 20. https://doi.org/10.1145/1852102.1852106
