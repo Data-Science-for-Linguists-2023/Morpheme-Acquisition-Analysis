@@ -37,7 +37,7 @@ The data sources utilized in this project are sourced from [TalkBank](https://ta
 
 - [Project plan](project_plan.md) was the original plan developed at the start of this project.
 
-- See the [License](LICENSE) to understand what you may and may not do with this project. 
+- See the [License](LICENSE.md) to understand what you may and may not do with this project. 
 
 ## References
 Brown, R. (1973). A first language. Cambridge, MA: Harvard University Press.
